@@ -11,10 +11,11 @@
       {% csrf_token %}
       <input type="text" name="city"><input type="submit" value="GO">
     </form>
-    {% if country %}
+    {% if weather %}
     <main>
-      <h4>Country: {{country}}</h4>
-      <h4></h4>
+      <h4>desription: {{weather}}</h4>
+      <h4>tempereture: {{tempereture}}K</h4>
+      <h4>humidity: {{humidity}}</h4>
     </main>
     {% endif %}
   </body>
